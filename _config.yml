@@ -2,10 +2,10 @@
 title: IoT-VN
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  IoT-VN is a Bootstrap based jekyll theme for portfolio, photography or any kind of blog.
-  
-  
-  
+  Thủ Thuật Lập Trình, Thủ Thuật Window, Phần mềm Crack siêu an toàn, Phần mềm - Key bản quyền.
+
+
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://IoT-VN.github.io" # the base hostname & protocol for your site
 
