@@ -15,8 +15,8 @@ default-image: webjeda-logo-big.jpg # If there is no featured image in a post th
 #footer
 built-by: MasterMind
 copyright:
-   name: IoT-VN
-   link: 'https://IoT-VN.github.io'
+   name: MasterMind
+   link: 'https://Fb.com/Mrlonely2512'
 
 # Build settings
 markdown: kramdown
