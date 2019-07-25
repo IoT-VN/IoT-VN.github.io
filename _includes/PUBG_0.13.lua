@@ -10,7 +10,7 @@ end
 
 function xx()
 
-xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], X[9]}, X[10], '✨ Wallhack SD845', '🎨 Colour SD845 Red', '🎨 Colour SD845 Yellow', '🎨 Colour SD845 Red HDR', X[11])
+xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], '✨ Wallhack SD845', '🎨 Colour SD845 Red', '🎨 Colour SD845 Yellow', '🎨 Colour SD845 Red HDR', X[9]}, X[10], X[11])
 
 if xxxx == X[13] then xxxxx() X[38](X[54]) end
 if xxxx == X[14] then xxxxxx() X[38](X[52]) end
