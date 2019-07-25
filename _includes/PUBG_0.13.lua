@@ -10,7 +10,7 @@ end
 
 function xx()
 
-xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], X[9]}, X[10], X[11])
+xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], X[9]}, X[10], '✨ Wallhack SD845', '🎨 Colour SD845 Red', '🎨 Colour SD845 Yellow', '🎨 Colour SD845 Red HDR', X[11])
 
 if xxxx == X[13] then xxxxx() X[38](X[54]) end
 if xxxx == X[14] then xxxxxx() X[38](X[52]) end
@@ -20,10 +20,61 @@ if xxxx == X[17] then xxxxxxxxx() X[38](X[57]) end
 if xxxx == X[18] then xxxxxxxxxx() X[38](X[55]) end
 if xxxx == X[19] then xxxxxxxxxxx() end
 if xxxx == X[20] then xxxxxxxxxxxx() end
-if xxxx == X[21] then xxxxxxxxxxxxxxxxx() end
+if xxxx == 9 then WH845() end
+if xxxx == 10 then RED845() end
+if xxxx == 11 then YLW845() end
+if xxxx == 12 then REDHDR845() end
+if xxxx == 13 then xxxxxxxxxxxxxxxxx() end
 xxxxxxxxxxxxxxxx = X[26]
 end
-
+function WH845()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber('95D;2;9.2194229e-41::100', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber('2', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(6)
+gg.editAll('120', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber('5.201992e21;2.25000452995;2;1.6623054e-19', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber('2', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(4)
+gg.editAll('120', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber('2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber('2', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(10)
+gg.editAll('120', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast('Wallhack SD845 activated!')
+end
+function RED845()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber('1,661,566,999;96;539,246,604;8200::', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber('8200', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(10)
+gg.editAll('7', gg.TYPE_DWORD)
+gg.toast('Colour Red SD845 activated!')
+end
+function YLW845()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber('536887312;539246610;-2128609280;8200', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber('8200', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(20)
+gg.editAll('6', gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('Colour Yellow SD845 activated!')
+end
+function REDHDR845()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber('256;8200;26', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber('8200', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.getResults(5)
+gg.editAll('7', gg.TYPE_DWORD)
+gg.toast('Colour Red HDR SD845 activated!')
+gg.clearResults()
+end
 function xxxxxx()
 X[31]()
 X[32](X[27])
