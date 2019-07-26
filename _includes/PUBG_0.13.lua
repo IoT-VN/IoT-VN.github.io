@@ -10,7 +10,7 @@ end
 
 function xx()
 
-xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], '✨ Wallhack SD845', '🎨 Colour SD845 Red', '🎨 Colour SD845 Yellow', '🎨 Colour SD845 Red HDR', '✧ Wallhack Fix Blink', X[9]}, X[10], X[11])
+xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], '✨ Wallhack SD845', '🎨 Colour SD845 Red', '🎨 Colour SD845 Yellow', '🎨 Colour SD845 Red HDR', '✧ Wallhack Fix Blink', '✧ Wallhack Fix Scope', '🔻 Speed Hack [Micro]', X[9]}, X[10], X[11])
 
 if xxxx == X[13] then xxxxx() X[38](X[54]) end
 if xxxx == X[14] then xxxxxx() X[38](X[52]) end
@@ -25,8 +25,20 @@ if xxxx == 10 then RED845() end
 if xxxx == 11 then YLW845() end
 if xxxx == 12 then REDHDR845() end
 if xxxx == 13 then FIXBLINK() end
-if xxxx == 14 then xxxxxxxxxxxxxxxxx() end
+if xxxx == 14 then FIXSCOPE() end
+if xxxx == 15 then MICROSPEED() end
+if xxxx == 16 then xxxxxxxxxxxxxxxxx() end
 xxxxxxxxxxxxxxxx = X[26]
+end
+function MICROSPEED()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber('1;1;1;0.0001;20;0.0005;0.4::50', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('1', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(500)
+gg.editAll('1.04', gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast('⏩ Speed Hack [Micro] ON ⏩')
 end
 function WH845()
 gg.clearResults()
@@ -89,6 +101,28 @@ gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("9999", gg.TYPE_FLOAT)
 gg.toast("☬ Wallhack Fix Blink ☬")
+end
+function FIXSCOPE()
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("2.718519e-43F;3.7615819e-37F;2.0F;-1.0F;1.0F;-127.0F;0.00999999978F::200", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("2.001", gg.TYPE_FLOAT)
+gg.searchNumber(2, gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_BAD)
+gg.searchNumber("5.8013756e-42F;-5.5695588e-40F;2.0F::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("2.001", gg.TYPE_FLOAT)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("120", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("☬ Wallhack Fix Scope ☬")
 end
 function xxxxxx()
 X[31]()
