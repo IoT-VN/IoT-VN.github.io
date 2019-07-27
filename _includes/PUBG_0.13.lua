@@ -10,7 +10,7 @@ end
 
 function xx()
 
-xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], '✨ Wallhack SD845', '🎨 Colour SD845 Red', '🎨 Colour SD845 Yellow', '🎨 Colour SD845 Red HDR', '✧ Wallhack Fix Blink', '✧ Wallhack Fix Scope', '🔻 Speed Hack [Micro]', X[9]}, X[10], X[11])
+xxxx = X[12]({X[5], X[3], X[4], X[7], X[8], X[6], X[1], X[2], '✨ Wallhack SD845', '🎨 Colour SD845 Red', '🎨 Colour SD845 Yellow', '🎨 Colour SD845 Green', '✧ Wallhack Fix Blink', '✧ Wallhack Fix Scope', '🔻 Speed Hack [Micro]', X[9]}, X[10], X[11])
 
 if xxxx == X[13] then xxxxx() X[38](X[54]) end
 if xxxx == X[14] then xxxxxx() X[38](X[52]) end
@@ -81,12 +81,11 @@ end
 function REDHDR845()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
-gg.searchNumber('256;8200;26', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
-gg.searchNumber('8200', gg.TYPE_DWORD,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("69,780;147457;69707", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("147457", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(5)
-gg.editAll('7', gg.TYPE_DWORD)
-gg.toast('Colour Red HDR SD845 activated!')
-gg.clearResults()
+gg.editAll("9", gg.TYPE_DWORD)
+gg.toast("Color 845 Green activated!")
 end
 function FIXBLINK()
 gg.clearResults()
@@ -94,13 +93,15 @@ gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("5.2806111e-40;6.50000333786;3.7615819e-37;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
-gg.editAll("9999", gg.TYPE_FLOAT)
+gg.editAll("9999", 16)
+gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
 gg.searchNumber("1.1202011e-19;1.1202015e-19;3.7615819e-37;255.0;2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(20)
 gg.editAll("9999", gg.TYPE_FLOAT)
-gg.toast("☬ Wallhack Fix Blink ☬")
+gg.clearResults()
+gg.toast("Fix Blink WallHack")
 end
 function FIXSCOPE()
 gg.clearResults()
