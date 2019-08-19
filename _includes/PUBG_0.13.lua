@@ -3,21 +3,11 @@ local x={range={["A"] = self.REGION_ANONYMOUS, ["B"] = self.REGION_BAD, ["CA"] =
 t = {["A"] = self.TYPE_AUTO, ["D"] = self.TYPE_DWORD, ["F"] = self.TYPE_FLOAT},
 f = {["exit"] = os.exit, ["edit"] = self.editAll, ["cMenu"] = self.choice, ["range"] = self.setRanges, ["clear"] = self.clearResults, ["lAdd"] = self.addListItems, ["mMenu"] = self.multiChoice, ["nSearch"] = self.searchNumber, ["aSearch"] = self.searchAddress, ["result"] = self.getResults, ["cResult"] = self.getResultCount, ["lResult"] = self.loadResults, ["lClear"] = self.clearList, ["toast"] = self.toast, ["alert"] = self.alert, ["fString"] = string.format, ["sVisible"] = self.setVisible, ["iVisible"] = self.isVisible, ["skip"] = self.skipRestoreState, ["sign"] = self.SIGN_EQUAL},
 b = {true, false, nil},
-s = {["null"] = '', 0xFFFFFFFF, ["cMark"] = " ᴠalυe ѕelecтed: 0", ["wMark"] = " ᴠalυe ѕelecтed: 0"}}
-
-cMark = x["s"]["cMark"]
-wMark = x["s"]["wMark"]
-
-MM2512=function(x, xx)
-x["f"]["aSearch"](x, x["s"][2], x["t"]["D"])
-x["f"]["result"](1)
-x["f"]["edit"](x["s"]["null"] .. xx, x["t"]["D"])
-x["f"]["clear"]()
-end
-fastSearch=MM2512
+s = {["null"] = '', 0xFFFFFFFF, ["cMark"] = " ᴠalυe ѕelecтed: 0", ["wMark"] = " ᴠalυe ѕelecтed: 0"}};cMark = x["s"]["cMark"];wMark = x["s"]["wMark"]
+MM2512=function(x, xx);x["f"]["aSearch"](x, x["s"][2], x["t"]["D"]);x["f"]["result"](1);x["f"]["edit"](x["s"]["null"] .. xx, x["t"]["D"]);x["f"]["clear"]();end;fastSearch=MM2512
 local mmMenu = function()
 cMenu = x["f"]["cMenu"]({
-"➤ ᴀᴜᴛᴏ ʜs 50%『 ɪsʟᴀɴᴅ/gaмe 』",
+"➤ ᴀᴜᴛᴏ ʜs『 ɪsʟᴀɴᴅ/gaмe 』",
 "➤ ᴍɪᴄʀᴏ sᴘᴇᴇᴅ『 gaмe 』",
 "➤ ᴀɴᴛᴇɴᴀ ɢʜɪʟʟɪᴇ『 gaмe 』",
 "➤ ʟᴇss ʀᴇᴄᴏɪʟ『 loввy 』",
@@ -28,7 +18,6 @@ cMenu = x["f"]["cMenu"]({
 '⛔ ᴇxιт'}, x["b"][3], "мм²⁵¹²༒Hσσк Dєтє¢тє∂")
 if cMenu == 1 then
 mHeadshot()
-x["f"]["toast"]("ᴀᴜᴛᴏ ʜs 50% ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
 if cMenu == 2 then
 mSpeed()
@@ -223,18 +212,53 @@ x["f"]["edit"]("16000", x["t"]["F"])
 x["f"]["clear"]()
 end
 mATN_G=MM2512
-MM2512=function()
+MM2512 = function()
+hs = x["f"]["cMenu"]({
+'🐓 ᴀᴜᴛᴏ ʜs ',
+'🐓 ᴀᴜᴛᴏ ʜs 50',
+'🐓 ᴀᴜᴛᴏ ʜs 30',
+'ʙᴀᴄᴋ'}, nil, 'мм²⁵¹²༒Hσσк Dєтє¢тє∂')
+if hs == 1 then hs1() end
+if hs == 2 then hs2() end
+if hs == 3 then hs3() end
+if hs == 4 then mmMenu() end
+xxxxxxxxxxxxxxxx = -1
+end
+mHeadshot = MM2512 
+
+MM2512 = function()
 x["f"]["clear"]()
 x["f"]["range"](x["range"]["A"])
 x["f"]["nSearch"]('9.20161819458;23;25;30.5', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
-x["f"]["cResult"]()
+x["f"]["nSearch"]('25;30.5', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
+x["f"]["result"](10)
+x["f"]["edit"]('250', x["t"]["F"])
+x["f"]["clear"]()
+x["f"]["toast"]("ᴀᴜᴛᴏ ʜs ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
+end
+hs1 = MM2512
+MM2512 = function()
+x["f"]["clear"]()
+x["f"]["range"](x["range"]["A"])
+x["f"]["nSearch"]('9.20161819458;23;25;30.5', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
 x["f"]["nSearch"]('25;30.5', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
 x["f"]["result"](10)
 x["f"]["edit"]('70', x["t"]["F"])
 x["f"]["clear"]()
+x["f"]["toast"]("ᴀᴜᴛᴏ ʜs 50% ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
-mHeadshot=MM2512
-
+hs2 = MM2512
+MM2512 = function()
+x["f"]["clear"]()
+x["f"]["range"](x["range"]["A"])
+x["f"]["nSearch"]('9.20161819458;23;25;30.5', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
+x["f"]["nSearch"]('25;30.5', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
+x["f"]["result"](10)
+x["f"]["edit"]('50', x["t"]["F"])
+x["f"]["clear"]()
+x["f"]["toast"]("ᴀᴜᴛᴏ ʜs 30% ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
+end
+hs3 = MM2512
 MM2512=function()
 x["f"]["clear"]()
 x["f"]["range"](x["range"]["A"])
