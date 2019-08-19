@@ -331,7 +331,7 @@ FinalResult[1].freeze = x["b"][1]
 x["f"]["lAdd"](FinalResult)
 k = wCount
 else
-if wMenu == wBackBtn then mMain() end
+if wMenu == wBackBtn then mmMenu() end
 end
 end
 end
@@ -429,7 +429,7 @@ mColorValue = 28
 mSearchColor()
 end
 
-if cSelect == 13 then mMain() end
+if cSelect == 13 then mmMenu() end
 L2512 = -1
 end
 end
@@ -472,7 +472,7 @@ mSearch(cTableNew[k], mColorValue)
 
 k = cCount
 else
-if cMenu == cBackBtn then mMain() end
+if cMenu == cBackBtn then mmMenu() end
 end
 end
 end
