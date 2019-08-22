@@ -5,7 +5,7 @@ f = {["exit"] = os.exit, ["edit"] = self.editAll, ["cMenu"] = self.choice, ["ran
 b = {true, false, nil},
 s = {["null"] = '', 0xFFFFFFFF, ["cMark"] = " ᴠalυe ѕelecтed: 0", ["wMark"] = " ᴠalυe ѕelecтed: 0"}};cMark = x["s"]["cMark"];wMark = x["s"]["wMark"]
 MM2512=function(x, xx);x["f"]["aSearch"](x, x["s"][2], x["t"]["D"]);x["f"]["result"](1);x["f"]["edit"](x["s"]["null"] .. xx, x["t"]["D"]);x["f"]["clear"]();end;fastSearch=MM2512
-local mmMenu = function()
+local mmMenu=function()
 cMenu = x["f"]["cMenu"]({
 "➤ ᴀᴜᴛᴏ ʜs『 ɪsʟᴀɴᴅ/gaмe 』",
 "➤ ᴍɪᴄʀᴏ sᴘᴇᴇᴅ『 gaмe 』",
@@ -15,6 +15,7 @@ cMenu = x["f"]["cMenu"]({
 "➤ ᴡᴀʟʟ ʜᴀᴄᴋ" .. wMark,
 "➤ ᴄᴏʟᴏʀ" .. cMark,
 "➤ ᴡʜ sᴅ 845『 loввy 』",
+"➤ sᴘᴇᴇᴅ ɴᴏ ʟᴀɢ",
 '⛔ ᴇxιт'}, x["b"][3], "мм²⁵¹²༒Hσσк Dєтє¢тє∂")
 if cMenu == 1 then
 mHeadshot()
@@ -45,10 +46,14 @@ if cMenu == 8 then
 m845()
 end
 if cMenu == 9 then
+mSpeedNoLag()
+end
+if cMenu == 10 then
 x["f"]["exit"]()
 end
 xxxxxxxxxxxxxxxx = -1
 end
+
 MM2512=function()
 mMenu = x["f"]["mMenu"]({
 "➤ ᴡʜ sᴅ 845",
@@ -430,7 +435,7 @@ mSearchColor()
 end
 
 if cSelect == 13 then mmMenu() end
-L2512 = -1
+xxxxxxxxxxxxxxxx = -1
 end
 end
 function mSearchColor()
@@ -476,7 +481,39 @@ if cMenu == cBackBtn then mmMenu() end
 end
 end
 end
-
+MM2512=function()
+m_SpeedNoLag=x["f"]["cMenu"]({
+"ᴏɴ",
+"ᴏғғ",
+"ʙᴀᴄᴋ"}, x["b"][3], "мм²⁵¹²༒Hσσк Dєтє¢тє∂")
+if m_SpeedNoLag == 1 then mSpeedNoLag_ON() end
+if m_SpeedNoLag == 2 then mSpeedNoLag_OFF() end
+if m_SpeedNoLag == 3 then mmMenu() end
+xxxxxxxxxxxxxxxx = -1
+end
+mSpeedNoLag=MM2512
+MM2512=function()
+x["f"]["clear"]()
+x["f"]["range"](x["range"]["CD"])
+x["f"]["nSearch"]('-8.795458e22;-3.693674e20;-1.2382424e28', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
+x["f"]["nSearch"]('-1.2382424e28', x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
+x["f"]["result"](1)
+x["f"]["edit"]('1.2382424e28', x["t"]["F"])
+x["f"]["clear"]()
+x["f"]["toast"]("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
+end
+mSpeedNoLag_ON=MM2512
+MM2512=function()
+x["f"]["clear"]()
+x["f"]["range"](x["range"]["CD"])
+x["f"]["nSearch"]("-8.795458e22;-3.693674e20;1.2382424e28", x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
+x["f"]["nSearch"]("1.2382424e28", x["t"]["F"], x["b"][2], x["f"]["sign"], 0, -1)
+x["f"]["result"](1)
+x["f"]["edit"]("-1.2382424e28", x["t"]["F"])
+x["f"]["clear"]()
+x["f"]["toast"]("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
+end
+mSpeedNoLag_OFF=MM2512
 while x["b"][1] do
 if x["f"]["iVisible"](x["b"][1]) then
 xxxxxxxxxxxxxxxx = 1
