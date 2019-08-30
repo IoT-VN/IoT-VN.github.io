@@ -471,9 +471,9 @@ for k = 1, cCount do
 if cMenu == k then
 cMark = ' ᴠalυe : ' .. k
 for i, v in ipairs (cTable) do
-mSearch(cTableNew[i], 40)
+fastSearch(cTableNew[i], 40)
 end
-mSearch(cTableNew[k], mColorValue)
+fastSearch(cTableNew[k], mColorValue)
 
 k = cCount
 else
