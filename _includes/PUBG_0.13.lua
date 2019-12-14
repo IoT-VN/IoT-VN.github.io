@@ -12,7 +12,7 @@ cMain = gg.choice({
 '➤ мв - ᴀᴜᴛᴏ ʜs『 мeɴᴜ/gaмe』',
 '➤ sᴘᴇᴇᴅ ɴᴏ ʟᴀɢ『 мeɴᴜ/gaмe』',
 '➤ ʟᴏʙʙʏ『 мeɴᴜ 』',
-'➤ ᴡʜ sᴅ 845『 loввy 』',
+'➤ ᴡʜ sᴅ 845『 gaмe 』',
 '➤ wall нacĸ ᴇxʏɴᴏs' .. wMark,
 '➤ color ᴇxʏɴᴏs' .. cMark,
 '⛔ ᴇxιт'}, nil, "мм²⁵¹²༒Hσσк Dєтє¢тє∂")
@@ -33,17 +33,15 @@ _LOBBY = gg.multiChoice({
 '➤ ʟᴇss ʀᴇᴄᴏɪʟ『 loввy 』',
 '➤ ɴᴏ ʀᴇᴄᴏɪʟ 100%『 loввy 』',
 '➤ anтena pro『 gaмe 』',
-'➤ ᴋɪᴄᴋ sᴘᴇᴄᴛᴀᴛᴏʀ『 loввy 』',
-'➤ aιм вoт 50м『 loввy 』',
+'➤ aιм вoт 100м『 loввy 』',
 '➤ ʙᴀᴄᴋ'}, nil, '')
 if _LOBBY == nil then
 else
 if _LOBBY[1] then mLessRecoil() end
 if _LOBBY[2] then mNoRecoil() end
 if _LOBBY[3] then mAntenaPro() end
-if _LOBBY[4] then mKick() end
-if _LOBBY[5] then mAim50() end
-if _LOBBY[6] then mMain() end
+if _LOBBY[4] then mAim50() end
+if _LOBBY[5] then mMain() end
 end
 L2512 = -1
 end
@@ -51,60 +49,22 @@ function mSpeedMenu()
 _mSpeedMenu = gg.multiChoice({
 '➤ sᴘᴇᴇᴅ ɴᴏ ʟᴀɢ - ᴛʀɪᴄᴋ『 ᴏɴ 』',
 '➤ sᴘᴇᴇᴅ ɴᴏ ʟᴀɢ - ᴛʀɪᴄᴋ『 ᴏғғ 』',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ M416',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Sᴄᴀʀ-L',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ M16ᴀ4',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Qʙᴢ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ G36ᴄ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Aᴜɢ A3',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Aᴋᴍ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Bᴇʀʏʟ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Gʀᴏᴢᴀ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Mᴜᴛᴀɴᴛ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Aᴡᴍ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Kᴀʀ98',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ M24',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Sᴋs',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Mᴋ 14',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Mɪɴɪ 14',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Sʟʀ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Qʙᴜ',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ M249',
-'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ Dᴘ-28',
+'➤  Fɪx Nᴏ Dᴀᴍᴀɢᴇ ',
 '➤ ʙᴀᴄᴋ'}, nil, '')
 if _mSpeedMenu == nil then
 else
 if _mSpeedMenu[1] then mSpeedON() end
 if _mSpeedMenu[2] then mSpeedOFF() end
 if _mSpeedMenu[3] then FS1() end
-if _mSpeedMenu[4] then FS2() end
-if _mSpeedMenu[5] then FS3() end
-if _mSpeedMenu[6] then FS4() end
-if _mSpeedMenu[7] then FS5() end
-if _mSpeedMenu[8] then FS6() end
-if _mSpeedMenu[9] then FS7() end
-if _mSpeedMenu[10] then FS8() end
-if _mSpeedMenu[11] then FS9() end
-if _mSpeedMenu[12] then FS10() end
-if _mSpeedMenu[13] then FS11() end
-if _mSpeedMenu[14] then FS12() end
-if _mSpeedMenu[15] then FS13() end
-if _mSpeedMenu[16] then FS14() end
-if _mSpeedMenu[17] then FS15() end
-if _mSpeedMenu[18] then FS16() end
-if _mSpeedMenu[19] then FS17() end
-if _mSpeedMenu[20] then FS18() end
-if _mSpeedMenu[21] then FS19() end
-if _mSpeedMenu[22] then FS20() end
-if _mSpeedMenu[23] then mMain() end
+if _mSpeedMenu[4] then mMain() end
 end
 L2512 = -1
 end
 MM2512 = function()
 hs = gg.choice({
-'🐓 ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ 50%『 gaмe 』',
-'🐓 ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ 99%『 gaмe 』',
-'🐓 ᴀᴜᴛᴏ ʜᴇᴀᴅsʜᴏᴛ 50%『 gaмe 』',
+'🅼🅶 ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ 50%『 gaмe 』',
+'🅼🅶 ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ 99%『 gaмe 』',
+'🅷🆂 ᴀᴜᴛᴏ ʜᴇᴀᴅsʜᴏᴛ 50%『 gaмe 』',
 '➤ ʙᴀᴄᴋ'}, nil, 'мм²⁵¹²༒Hσσк Dєтє¢тє∂')
 if hs == nil then
 else
@@ -148,215 +108,129 @@ end
 function FS1()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('88000;0.08600000292', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('88000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("88000;0.08600000292", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('M➃➀➅ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS2()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('87000;0.09600000083', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('87000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("87000;0.09600000083", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Sᴄᴀʀ-ʟ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS3()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('90000;0.07500000298', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('90000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("90000;0.07500000298", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('M➀➅ᴀ➃ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS4()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('87000;0.09229999781', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('87000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("87000;0.09229999781", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Qʙᴢ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS5()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('87000;0.86', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('87000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("87000;0.86", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('G➂➅ᴄ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS6()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('94000;0.08570999652', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('94000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("94000;0.08570999652", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("94000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Aᴜɢ A➂ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS7()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('71500;0.10000000149', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('71500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500;0.10000000149", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Aᴋᴍ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS8()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('71500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('71500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('Bᴇʀʏʟ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS9()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('71500;0.07999999821', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('71500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500;0.07999999821", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Gʀᴏᴢᴀ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS10()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('78000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('78000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("78000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("78000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('Mᴜᴛᴀɴᴛ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS11()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('91000;2.2;2.5::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('91000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("91000;2.2;2.5::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("91000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('Aᴡᴍ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS12()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('76000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('76000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("76000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('Kᴀʀ➈➇ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS13()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('79000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('79000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("79000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("79000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('M➁➃ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS14()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('80000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('80000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("80000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("80000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Sᴋs Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS15()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('85300;0.09000000358', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('85300', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("85300;0.09000000358", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("85300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('Mᴋ ➀➃ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS16()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('99000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('99000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("99000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("99000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('Mɪɴɪ ➀➃ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS17()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('84000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('84000', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("84000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("84000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('Sʟʀ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS18()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('94500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('94500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("94500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("94500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.toast('Qʙᴜ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS19()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('91500;0.07500000298', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('91500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("91500;0.07500000298", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("91500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast('M➁➃➈ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
-gg.clearResults()
-end
-function FS20()
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber('71500;0.109', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber('71500', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500;0.109", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1401)
-gg.editAll('37401', gg.TYPE_FLOAT)
+gg.editAll("37401", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast('Dᴘ-➁➇ Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
+gg.toast('Fɪx Nᴏ Dᴀᴍᴀɢᴇ')
 gg.clearResults()
 end
+
 mFixBlink = function()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
@@ -376,42 +250,44 @@ end
 function mLessRecoil()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("0", gg.TYPE_FLOAT)
+gg.searchNumber("1,868,784,978;1,850,305,641;28,518;13,212::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1,850,305,641", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("0", gg.TYPE_DWORD)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1D;0.05000000075F;0.10000000149F;0.55000001192F;9.5F;15.0F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1;0;0;1,028,443,341;1,090,519,040;1,036,831,949;1,057,803,469;1,092,091,904;1,097,859,072::33", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(800)
+gg.getResults(50)
 gg.editAll("0", gg.TYPE_DWORD)
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
 function mNoRecoil()
 gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1,868,784,978;1,850,305,641;28,518;13,212::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1,850,305,641", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(20)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1;0;0;1,028,443,341;1,090,519,040;1,036,831,949;1,057,803,469;1,092,091,904;1,097,859,072::33", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(50)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
 gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-2.786982e28;-3.7444097e28;-1.1368837e-13::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-3.7444097e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-6.1549454e27;1.8638966e-20;-1.1144502e28;0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1)
 gg.editAll("0", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_C_DATA)
 gg.searchNumber("-2.8111605e28;-3.7444097e28;-1.1144502e28;128.0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(1)
 gg.editAll("0", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-6.1549454e27;1.8638966e-20;-1.1144502e28;0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA)
-gg.searchNumber("-1.2382424e28;-1.4239333e28;-1.1144502e28;-1.8331474e27;-7.1608877e24::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("90", gg.TYPE_FLOAT)
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
 function mAntenaPro()
@@ -419,8 +295,8 @@ gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("88.50576019287F;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("88.50576019287F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)
+gg.getResults(9)
+gg.editAll("1;1;999;1;1;999;1;1;999", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
@@ -428,8 +304,8 @@ function mAim50()
 gg.clearResults()
 gg.setRanges(gg.REGION_C_DATA)
 gg.searchNumber("360;0.0001;1478828288", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(999)
+gg.searchNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
 gg.editAll("9999", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
@@ -457,20 +333,20 @@ end
 function mWH845_wh()
 gg.clearResults()
 gg.setRanges(gg.REGION_BAD)
-gg.searchNumber('95D;2;9.2194229e-41::100', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
-gg.searchNumber('2', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("95D;2;9.2194229e-41::100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(6)
-gg.editAll('120', gg.TYPE_FLOAT)
+gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.searchNumber('5.201992e21;2.25000452995;2;1.6623054e-19', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
-gg.searchNumber('2', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("5.201992e21;2.25000452995;2;1.6623054e-19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(4)
-gg.editAll('120', gg.TYPE_FLOAT)
+gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.searchNumber('2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
-gg.searchNumber('2', gg.TYPE_FLOAT,false, gg.SIGN_EQUAL,0,-1)
+gg.searchNumber("2;-1;0;1;-127;0.24022650719;0.69314718246;0.00999999978::30", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
-gg.editAll('120', gg.TYPE_FLOAT)
+gg.editAll("120", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
@@ -571,19 +447,7 @@ gg.editAll("7", gg.TYPE_DWORD)
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
 mHS = MM2512 
-mKick = function()
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber('909391408;808923191::8', 4)
-gg.getResults(999)
-gg.editAll('1089886885', 4)
-gg.clearResults()
-gg.setRanges(4)
-gg.searchNumber('909391408', 4)
-gg.getResults(999)
-gg.editAll('1089886885', 4)
-gg.toast("ᴋɪᴄᴋ sᴘᴇᴄᴛᴀᴛᴏʀ ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
-end
+
 MM2512 = function()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -603,33 +467,37 @@ gg.getResults(500)
 gg.editAll("95", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("987", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1;20.51941871643;2.04908943176;-86.45767974854;-92.2311706543;16.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("16", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
-gg.editAll("700", gg.TYPE_FLOAT)
+gg.editAll("100", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.searchNumber("1,048,130,372D;16;12.66705417633;1,119,194,409D;1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("16", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(3)
+gg.editAll("121", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
 hs2 = MM2512
 MM2512 = function()
 gg.clearResults()
-gg.setRanges(gg.REGION_BAD)
-gg.searchNumber("-88.66608428955;26:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("26", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("-460", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("-88.73961639404;28:512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("-560", gg.TYPE_FLOAT)
-gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10)
-gg.editAll("100", gg.TYPE_FLOAT)
+gg.editAll("241", gg.TYPE_FLOAT)
 gg.clearResults()
+gg.searchNumber("25.0;23.0;-1.31859207153;9.20161819458;0.00009203507", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("10001", gg.TYPE_FLOAT)
 gg.toast("ᴀᴄᴛɪᴠᴀᴛᴇᴅ √")
 end
 hs3 = MM2512
@@ -645,7 +513,7 @@ gg.searchNumber("0.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
 gg.editAll("0", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.searchNumber("0.5;2.8025969e-45;4D;2D;14D;5D;-1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("0.5;2.8025969e-45;4D;2D;5D;-1D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 if gg.getResultCount() == 0 then
 gg.alert('🅴🆁🆁🅾🆁 vᴀʟuᴇ ɴoт ғouɴᴅ')
 else
